@@ -1,5 +1,8 @@
 # Parquet S3 Foreign Data Wrapper for PostgreSQL
 
+> This fork adds a Dockerfile for a PostgreSQL image with support for `parquet_s3_fdw`
+> _This was tested with PostgreSQL 13.7, Apache Arrow 9.0.1 and AWS SDK for C++ 1.8.14_
+
 This PostgreSQL extension is a Foreign Data Wrapper (FDW) for accessing Parquet file on local file system and [Amazon S3][2].
 This version of parquet_s3_fdw can work for PostgreSQL 13.
 
