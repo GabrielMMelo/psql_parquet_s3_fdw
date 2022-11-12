@@ -490,7 +490,7 @@ s3_client_open(const char *user, const char *password, bool use_minio)
 
 	if (use_minio)
 	{
-		const Aws::String endpoint = "127.0.0.1:9000";
+		const Aws::String endpoint = "host.docker.internal:9000";
 		clientConfig.scheme = Aws::Http::Scheme::HTTP;
 		clientConfig.endpointOverride = endpoint;
 		s3_client = new Aws::S3::S3Client(cred, clientConfig,
